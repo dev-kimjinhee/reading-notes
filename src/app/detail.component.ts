@@ -7,7 +7,6 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  searchTitle = '';
   books = [];
 
   constructor(private http: HttpClient) {
@@ -33,6 +32,10 @@ export class AppComponent {
       this.books = result['documents'];
       console.log('search', value, this.books);
     });
+  }
+
+  onAdd(book: object) {
+    console.log('onAdd', book);
   }
 
   resetSearch() {
