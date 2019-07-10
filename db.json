@@ -1,36 +1,58 @@
 {
   "notes": [
     {
-      "title": "컴퓨터 과학 로드맵",
-      "score": 4,
+      "book": {
+        "authors": [
+          "블라드스톤 페헤이라 필루"
+        ],
+        "contents": "알고리즘, 데이터 구조, 데이터베이스, 컴퓨터 구조, 다양한 언어의 프로그래밍 패러다임. 주제마다 두툼한 책 한 권이 될 수 있는 내용을 이 얇은 책에서 모두 다루고 있습니다. 컴퓨터과학의 각 주제 중에서 기본이 되는 중요한 부분을 엄선해 예제, 그림을 통해 직관적으로 원리를 깨우치게 합니다. 초보자에게는 컴퓨터과학의 기본기를 다질 수 있게 하고, 프로그래머에게는 방향을 잃었을 때 도움을 줄 것입니다.",
+        "datetime": "2018-04-19T00:00:00.000+09:00",
+        "isbn": "8966262198 9788966262199",
+        "price": 18000,
+        "publisher": "인사이트",
+        "sale_price": 16200,
+        "status": "정상판매",
+        "thumbnail": "https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F924441%3Ftimestamp%3D20190126004341",
+        "title": "컴퓨터 과학 로드맵(한 권으로 그리는)",
+        "translators": [
+          "박연오"
+        ],
+        "url": "https://search.daum.net/search?w=bookpage&bookId=924441&q=%EC%BB%B4%ED%93%A8%ED%84%B0+%EA%B3%BC%ED%95%99+%EB%A1%9C%EB%93%9C%EB%A7%B5%28%ED%95%9C+%EA%B6%8C%EC%9C%BC%EB%A1%9C+%EA%B7%B8%EB%A6%AC%EB%8A%94%29"
+      },
+      "score": "",
       "oneLineReviews": "",
       "readDate": "",
-      "FavoritePhrase": "",
+      "favoritePhrases": [
+        ""
+      ],
       "id": 1
     },
     {
-      "title": "한눈에 보인다 스페인어 첫걸음",
-      "score": 1,
+      "book": {
+        "authors": [
+          "로버트 마틴"
+        ],
+        "contents": "[클린 코더]는 세계적으로 유명한 프로그래머 '밥 아저씨' 로버트 마틴이 쓴 책으로, 프로 개발자가 되는 길을 알려준다. 수십 년의 경험을 바탕으로 장인 정신, 실천 기법, 도구뿐만 아니라 프로가 가져야 할 마음가짐과 태도를 알려준다. 빡빡한 일정으로 인한 압박을 견디고 비이성적인 사람들과 대화하고 진창에 빠져 오도가도 못하는 상황을 피하는 법 등 다양한 지혜가 책에 담겨 있다. 위대한 소프트웨어를 만드는 장인 정신을 보여주고 프로만이 가지는 자부심과",
+        "datetime": "2016-07-20T00:00:00.000+09:00",
+        "isbn": "8960778818 9788960778818",
+        "price": 25000,
+        "publisher": "에이콘출판",
+        "sale_price": 22500,
+        "status": "정상판매",
+        "thumbnail": "https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F838240%3Ftimestamp%3D20190125085153",
+        "title": "클린 코더(acornLoft)",
+        "translators": [
+          "정희종"
+        ],
+        "url": "https://search.daum.net/search?w=bookpage&bookId=838240&q=%ED%81%B4%EB%A6%B0+%EC%BD%94%EB%8D%94%28acornLoft%29"
+      },
+      "score": "",
       "oneLineReviews": "",
       "readDate": "",
-      "FavoritePhrase": "",
+      "favoritePhrases": [
+        ""
+      ],
       "id": 2
-    },
-    {
-      "title": "클린 코더",
-      "score": 5,
-      "oneLineReviews": "",
-      "readDate": "",
-      "FavoritePhrase": "",
-      "id": 3
-    },
-    {
-      "title": "함께 자라기",
-      "score": 5,
-      "oneLineReviews": "",
-      "readDate": "",
-      "FavoritePhrase": "",
-      "id": 4
     }
   ]
 }

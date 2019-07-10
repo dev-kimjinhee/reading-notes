@@ -5,11 +5,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DetailComponent } from './detail.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'detail', component: DetailComponent},
   { path: 'home', component: AppComponent},
 ];
 
@@ -18,7 +16,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DetailComponent,
   ],
   imports: [
     BrowserModule,

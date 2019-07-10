@@ -8,15 +8,7 @@ import { FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
 
-  note = {
-    title: '',
-    score: '',
-    oneLineReviews: '',
-    readDate: '',
-    favoritePhrases: [''],
-  };
   books: Array<object>;
-  notes: Array<object>;
   createForm: FormGroup;
   searchWord = '';
 
@@ -32,7 +24,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.createForm = this.formBuilder.group({
-      title: [''],
+      book: [''],
       score: [''],
       oneLineReviews: [''],
       readDate: [''],
