@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, FormArray, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +8,16 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
 
-  note: object;
+  note = {
+    title: '',
+    score: '',
+    oneLineReviews: '',
+    readDate: '',
+    favoritePhrases: [''],
+  };
   books: Array<object>;
   notes: Array<object>;
-  addForm: FormGroup;
+  createForm: FormGroup;
   searchWord = '';
 
   constructor(
@@ -20,13 +26,19 @@ export class AppComponent implements OnInit {
     ) {
   }
 
+  get favoriteParses() {
+    return this.createForm.get('favoritePhrases') as FormArray;
+  }
+
   ngOnInit(): void {
-    this.addForm = this.formBuilder.group({
+    this.createForm = this.formBuilder.group({
       title: [''],
       score: [''],
       oneLineReviews: [''],
       readDate: [''],
-      FavoritePhrase: [''],
+      favoritePhrases: this.formBuilder.array([
+        this.formBuilder.control('')
+      ]),
     });
   }
 
@@ -57,20 +69,26 @@ export class AppComponent implements OnInit {
     this.searchWord = null;
   }
 
-  onAddNote(note: object) {
+  onCreateNote(selectedBook: any) {
     this.resetSearch();
-    this.note = note;
+    this.createForm.patchValue({
+      book: selectedBook,
+    });
   }
 
   onSave() {
-    const note = this.addForm.getRawValue();
-    this.http.post('http://localhost:3000/notes', note ).subscribe((result) => {
+    const note = this.createForm.getRawValue();
+    this.http.post('http://localhost:3000/notes', note ).subscribe(() => {
       this.resetSearch();
-      this.note = null;
-      this.http.get('http://localhost:3000/notes').subscribe((notes) => {
-        console.log(notes);
-      });
     });
+  }
+
+  addFavoriteParses() {
+    this.favoriteParses.push(this.formBuilder.control(''));
+  }
+
+  removeFavoriteParses(index: number) {
+    this.favoriteParses.removeAt(index);
   }
 
 }
