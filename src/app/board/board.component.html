@@ -1,0 +1,9 @@
+<div class="card" #board>
+  <div class="card-header">
+    {{ status }}
+  </div>
+  <div class="card-body">
+    <app-search-book *ngIf=" status === 'TODO'"></app-search-book>
+    <app-notes-list [notes]="notes"></app-notes-list>
+  </div>
+</div>
